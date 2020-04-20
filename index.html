@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class=" card center-align">
+        
+        <div class="center-align">
+            <button class = "btn" id = "highScore" onclick="toggleHighScores()">High Scores</button> 
+            <button class = "btn hidden" id="pause" onclick="togglePause()">PAUSE TIMER</button>
+        </div>
+        <div class = "center-align" id = "timer">
+        </div>
+        <div class="center-align card col s9">
+            <h1>
+                Quiz!
+            </h1>
+        </div>
+        <div class = "card center-align col s9 hidden" id = "pauseMessage">
+            <h2> Paused...</h2>
+        </div>
+        <div class = "card center-align col s9" id = "introQuestions">
+            <p><h4>Welcome!<br>Please Press Start to Begin the Quiz</h4></p>
+        </div>
+        <div class = "card center-align col s9" id = "answers">
+        </div>
+        <div class = "card center-align col s9" id = "rightWrong">
+        </div>
+        <div class="card center-align col s9" id = "start">
+            <button class = "btn" onclick = 'startQuiz()'>START</button>
+            <input type ="text" id = "nameEntry" value="Enter Name Here" />
+        </div>
+
+        <div class="card center-align col s9">
+            <ol class = "hidden" id = "highScores">High Score: </ol>
+
+        </div>
+        
+        <!-- link to high scores -->
+        <!-- timer on the upper left start with 75 sec-->
+        <!-- coding quiz challenge intro paragraph -->
+        <!-- button to start quiz -->
+        <!-- display question and have <button> with answers in it -->
+            <!-- if correct display "correct" -->
+            <!-- add to score -->
+            <!-- if !correct display wrong and deduct 5 sec from timer -->
+            
+            
+        </body>
+        <script src="./script.js"></script>
+        </html>
+        
